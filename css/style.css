@@ -131,10 +131,12 @@
     margin-right: 8px;
     border-radius: 3px;
 }
+
 .input--checkbox:checked {
     background-color: var(--red);
 }
-.input--checkbox:checked::after{
+
+.input--checkbox:checked::after {
     content: "";
     display: block;
     width: 5px;
@@ -144,4 +146,30 @@
     transform: rotate(45deg);
     margin: 2px 6px;
 
+}
+
+.login__button {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+.login__button svg{
+    fill: var(--whitesmoke);
+}
+.login__button:disabled {
+    cursor: auto;
+    background-color: var(--light-grey);
+    border: 2px solid var(--ligth0gray);
+}
+
+.login__button:disabled svg{
+    fill: var(--grey);
 }
