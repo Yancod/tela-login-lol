@@ -19,9 +19,22 @@
     --red: #CF3C3F;
 }
 
+main {
+    display: flex;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .login {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 500px;
@@ -161,15 +174,34 @@
     cursor: pointer;
     margin-bottom: 60px;
 }
-.login__button svg{
+
+.login__button svg {
     fill: var(--whitesmoke);
 }
+
 .login__button:disabled {
     cursor: auto;
     background-color: var(--light-grey);
     border: 2px solid var(--ligth0gray);
 }
 
-.login__button:disabled svg{
+.login__button:disabled svg {
     fill: var(--grey);
+}
+
+.login__link {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: var(--medium-grey);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.wallpaper {
+    width: 100%;
+    background-image: url('../assets/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
 }
