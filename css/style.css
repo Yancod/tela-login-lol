@@ -18,3 +18,11 @@
     --blue: #1B77F3;
     --red: #CF3C3F;
 }
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+}
